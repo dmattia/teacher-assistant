@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teacher Assistant</title>
+
+    <!-- Include an external styling helper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
+
+    <!-- Include our custom CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Teacher Assistant</h1>
+
+    <input type="range" min="-100" max="100" value="0" id="myRange" />
+    <h3 id="confusionText">I am neutral</h3>
+
+    <h3 id="classText">Class Average:</h3>
+    <input type="range" min="-100" max="100" value="0" id="classRange" disabled />
+
+    <!-- Include firebase -->
+    <script src="/__/firebase/8.1.2/firebase-app.js"></script>
+    <script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.1.2/firebase-database.js"></script>
+    <script src="/__/firebase/8.1.2/firebase-auth.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- Include Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Include our custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
